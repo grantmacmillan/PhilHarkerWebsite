@@ -1,20 +1,17 @@
-import PhilipsSelfie from "../assets/philip-selfie.png"
-import styles from "../styles/ScreenStyles.module.css"
+import PhilipsSelfie from "../assets/philip-selfie.png";
 
-const HomeScreen = ({}) => {
+const HomeScreen = () => {
+    return (
+        <div className="container my-4">
+            <h1 className="mb-3">Home Page</h1>
+            <img src={PhilipsSelfie} width="450" className="img-fluid mb-3"></img>
 
-    return(
-        <div>
-            <h1>Home Page</h1>
-            <img src={PhilipsSelfie} width="450"></img>
-            <br></br>
+            <p className="lead">Hello. My name is Philip. I do some stuff.</p>
 
-            <div>Hello. My name is Philip. I do some stuff.</div>
-
-            <br></br>
-
-            <a href="https://philidips.substack.com">My Newsletter</a> — <a href="/contact">My Contact</a>
-
+            <div>
+                <a href="https://philidips.substack.com" className="btn btn-primary me-2">My Newsletter</a>
+                <a href="/contact" className="btn btn-secondary">My Contact</a>
+            </div>
         </div>
     );
 };

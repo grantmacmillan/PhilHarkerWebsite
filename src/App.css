@@ -1,4 +1,4 @@
-.navbar {
+.custom-navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,17 +8,22 @@
   /* Rest of the styles */
 }
 
-.nav-list {
+body {
+  padding-top: 50px;
+  /* Adjust this value based on the height of your navbar */
+}
+
+.custom-nav-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-item {
+.custom-nav-item {
   float: left;
 }
 
-.nav-link {
+.custom-nav-link {
   display: block;
   color: white;
   text-align: center;
@@ -26,7 +31,7 @@
   text-decoration: none;
 }
 
-.nav-link:hover {
+.custom-nav-link:hover {
   background-color: #ddd;
   color: black;
 }
