@@ -5,6 +5,7 @@ import EcologyScreen from './screens/EcologyScreen';
 import SoftwareScreen from './screens/SoftwareScreen';
 import WritingScreen from './screens/WritingScreen';
 import './App.css';
+import ContactScreen from './screens/ContactScreen';
 
 // Navigation Bar Component
 const NavBar = () => {
@@ -23,6 +24,9 @@ const NavBar = () => {
         <li className="nav-item">
           <Link to="/writing" className="nav-link">Writing</Link>
         </li>
+        <li className="nav-item">
+          <Link to="/contact" className="nav-link">Contact</Link>
+        </li>
       </ul>
     </nav>
   );
@@ -39,6 +43,7 @@ function App() {
           <Route path="/ecology" element={<EcologyScreen />} />
           <Route path="/software" element={<SoftwareScreen />} />
           <Route path="/writing" element={<WritingScreen />} />
+          <Route path="/contact" element={<ContactScreen />} />
         </Routes>
       </div>
     </Router>

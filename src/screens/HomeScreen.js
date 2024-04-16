@@ -12,7 +12,7 @@ const HomeScreen = ({}) => {
 
             <br></br>
 
-            <a href="https://philidips.substack.com">My Newsletter</a> — <a href="">My Contact</a>
+            <a href="https://philidips.substack.com">My Newsletter</a> — <a href="/contact">My Contact</a>
         </div>
     );
 };
