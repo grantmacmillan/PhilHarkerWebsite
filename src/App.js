@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import EcologyScreen from './screens/EcologyScreen';
@@ -9,6 +9,7 @@ import ContactScreen from './screens/ContactScreen';
 
 // Navigation Bar Component
 const NavBar = () => {
+
   return (
     <nav className="navbar">
       <ul className="nav-list">
@@ -34,6 +35,11 @@ const NavBar = () => {
 
 // App Component
 function App() {
+  useEffect(() => {
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    const app = document.querySelector('.App');
+    app.style.marginTop = `${navbarHeight}px`;
+  }, []);
   return (
     <Router>
       <div className="App">

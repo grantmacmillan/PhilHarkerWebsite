@@ -1,6 +1,11 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #333;
-  overflow: hidden;
+  /* Rest of the styles */
 }
 
 .nav-list {
@@ -29,15 +34,4 @@
 .software-container-top {
   text-align: center;
   padding-top: 20px;
-}
-
-/* Add responsiveness to the navbar */
-@media screen and (max-width: 600px) {
-
-  .nav-item,
-  .nav-link {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
