@@ -1,3 +1,9 @@
+:root {
+  --canvas-colour: #dfdde6;
+  --secondary-colour: #141414;
+  --accent-colour: #ff2306;
+}
+
 .custom-navbar {
   position: fixed;
   top: 0;
@@ -10,6 +16,7 @@
 
 body {
   padding-top: 50px;
+  background-color: var(--canvas-colour);
   /* Adjust this value based on the height of your navbar */
 }
 
@@ -39,4 +46,26 @@ body {
 .software-container-top {
   text-align: center;
   padding-top: 20px;
+}
+
+.hero {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.directory {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.directory-card {
+  color: var(--canvas-colour);
+  background-color: var(--secondary-colour);
+}
+
+.button-default {
+  text-align: center;
+  color: var(--canvas-colour);
+  background-color: var(--accent-colour);
+  margin: 1%;
 }
